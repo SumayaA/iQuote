@@ -11,6 +11,11 @@
 		56F1CE2C296E8D9400E3A61C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F1CE2B296E8D9400E3A61C /* ContentView.swift */; };
 		56F1CE2E296E8D9500E3A61C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F1CE2D296E8D9500E3A61C /* Assets.xcassets */; };
 		56F1CE31296E8D9500E3A61C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F1CE30296E8D9500E3A61C /* Preview Assets.xcassets */; };
+		56F1CE38296E8DD100E3A61C /* CameraScanText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F1CE37296E8DD100E3A61C /* CameraScanText.swift */; };
+		56F1CE3C296E929D00E3A61C /* CameraScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F1CE3B296E929D00E3A61C /* CameraScannerViewController.swift */; };
+		56F1CE45296EE6E400E3A61C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F1CE44296EE6E400E3A61C /* CoreDataManager.swift */; };
+		56F1CE48296EE6FE00E3A61C /* QuotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56F1CE46296EE6FE00E3A61C /* QuotesModel.xcdatamodeld */; };
+		56F1CE4D296FCFC400E3A61C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56F1CE4F296FCFC400E3A61C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,13 @@
 		56F1CE2B296E8D9400E3A61C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		56F1CE2D296E8D9500E3A61C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56F1CE30296E8D9500E3A61C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56F1CE37296E8DD100E3A61C /* CameraScanText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScanText.swift; sourceTree = "<group>"; };
+		56F1CE3B296E929D00E3A61C /* CameraScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerViewController.swift; sourceTree = "<group>"; };
+		56F1CE44296EE6E400E3A61C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		56F1CE47296EE6FE00E3A61C /* QuotesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuotesModel.xcdatamodel; sourceTree = "<group>"; };
+		56F1CE4E296FCFC400E3A61C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		56F1CE50296FCFC900E3A61C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		56F1CE51296FCFCA00E3A61C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +64,13 @@
 			isa = PBXGroup;
 			children = (
 				56F1CE29296E8D9400E3A61C /* iQuoteApp.swift */,
-				56F1CE2B296E8D9400E3A61C /* ContentView.swift */,
+				56F1CE43296EE68800E3A61C /* Managers */,
+				56F1CE4A296F2FB300E3A61C /* ViewModel */,
+				56F1CE49296F2FA900E3A61C /* View */,
+				56F1CE46296EE6FE00E3A61C /* QuotesModel.xcdatamodeld */,
 				56F1CE2D296E8D9500E3A61C /* Assets.xcassets */,
 				56F1CE2F296E8D9500E3A61C /* Preview Content */,
+				56F1CE4F296FCFC400E3A61C /* Localizable.strings */,
 			);
 			path = iQuote;
 			sourceTree = "<group>";
@@ -65,6 +81,31 @@
 				56F1CE30296E8D9500E3A61C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		56F1CE43296EE68800E3A61C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				56F1CE44296EE6E400E3A61C /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		56F1CE49296F2FA900E3A61C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56F1CE2B296E8D9400E3A61C /* ContentView.swift */,
+				56F1CE37296E8DD100E3A61C /* CameraScanText.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56F1CE4A296F2FB300E3A61C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56F1CE3B296E929D00E3A61C /* CameraScannerViewController.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +150,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				fr,
 			);
 			mainGroup = 56F1CE1D296E8D9400E3A61C;
 			productRefGroup = 56F1CE27296E8D9400E3A61C /* Products */;
@@ -126,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56F1CE31296E8D9500E3A61C /* Preview Assets.xcassets in Resources */,
+				56F1CE4D296FCFC400E3A61C /* Localizable.strings in Resources */,
 				56F1CE2E296E8D9500E3A61C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,12 +181,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F1CE48296EE6FE00E3A61C /* QuotesModel.xcdatamodeld in Sources */,
+				56F1CE38296E8DD100E3A61C /* CameraScanText.swift in Sources */,
 				56F1CE2C296E8D9400E3A61C /* ContentView.swift in Sources */,
+				56F1CE3C296E929D00E3A61C /* CameraScannerViewController.swift in Sources */,
+				56F1CE45296EE6E400E3A61C /* CoreDataManager.swift in Sources */,
 				56F1CE2A296E8D9400E3A61C /* iQuoteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56F1CE4F296FCFC400E3A61C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56F1CE4E296FCFC400E3A61C /* ar */,
+				56F1CE50296FCFC900E3A61C /* en */,
+				56F1CE51296FCFCA00E3A61C /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		56F1CE32296E8D9500E3A61C /* Debug */ = {
@@ -270,6 +331,7 @@
 				DEVELOPMENT_TEAM = 44QNX63HR6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan barcode and text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +361,7 @@
 				DEVELOPMENT_TEAM = 44QNX63HR6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan barcode and text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +402,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		56F1CE46296EE6FE00E3A61C /* QuotesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				56F1CE47296EE6FE00E3A61C /* QuotesModel.xcdatamodel */,
+			);
+			currentVersion = 56F1CE47296EE6FE00E3A61C /* QuotesModel.xcdatamodel */;
+			path = QuotesModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 56F1CE1E296E8D9400E3A61C /* Project object */;
 }

@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct iQuoteApp: App {
+    @StateObject var coreDM: CoreDataManager = CoreDataManager()
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        WindowGroup{
+            ContentView().environmentObject(coreDM)
         }
     }
 }
